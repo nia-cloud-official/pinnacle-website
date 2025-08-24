@@ -1,0 +1,55 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+@@include('blocks/page-title.htm', {
+"title": "Student Registration",
+"description": "Register for Your Course"
+})
+
+<section class="section registration-section">
+	<div class="container">
+		<div class="columns is-multiline">
+			<div class="column is-6-desktop is-6-tablet">
+				<p class="is-size-5 mb-5">Enroll today and take the first step towards your future with our specialized courses.</p>
+				<p>Please complete the registration form carefully. One of our representatives will contact you to confirm your enrollment and provide further details.</p>
+			</div>
+
+			<div class="column is-6-desktop is-6-tablet">
+				<span class="text-color">Course Enrollment</span>
+				<h2 class="mb-5 text-md">Student Registration Form</h2>
+				<form action="#" netlify method="post" enctype="multipart/form-data" class="registration-form">
+
+					<div class="mb-4">
+						<input type="text" class="input" name="full_name" placeholder="Full Names" required>
+					</div>
+
+					<div class="mb-4">
+						<input type="text" class="input" name="phone" placeholder="Phone Number" required>
+					</div>
+
+					<div class="mb-4">
+						<input type="email" class="input" name="email" placeholder="Email Address" required>
+					</div>
+
+					<div class="mb-4">
+						<input type="text" class="input" name="course" placeholder="Course You Are Interested In" required>
+					</div>
+
+					<div class="mb-4">
+						<input type="text" class="input" name="next_of_kin" placeholder="Next of Kin Name" required>
+					</div>
+
+					<div class="mb-4">
+						<input type="text" class="input" name="address" placeholder="Physical Address" required>
+					</div>
+
+
+					<button type="submit" class="btn btn-main-2 is-rounded mt-3">Submit Registration</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section About End -->
+@@include('blocks/footer.htm')
+@@include('footer.htm')
